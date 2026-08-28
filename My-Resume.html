@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muhammad Hanan - Professional Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        @page {
+            size: letter;
+            margin: 0.5in 0.6in 0.5in 0.6in;
+            background-color: #ffffff;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 10pt;
+            line-height: 1.45;
+            color: #222222;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        .name {
+            font-size: 20pt;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: #0f172a;
+        }
+
+        .contact-line {
+            font-size: 9pt;
+            color: #475569;
+            margin-bottom: 3px;
+            font-weight: 400;
+        }
+
+        .pipe-sep {
+            margin: 0 6px;
+            color: #64748b;
+            font-weight: normal;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 10.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1.5px solid #0f172a;
+            padding-bottom: 3px;
+            margin-top: 14px;
+            margin-bottom: 9px;
+            color: #0f172a;
+        }
+
+        /* Summary Text */
+        .summary-text {
+            text-align: justify;
+            margin: 0;
+            font-size: 9.5pt;
+            line-height: 1.5;
+            color: #334155;
+        }
+
+        /* Education Entry Formatting */
+        .edu-entry {
+            margin-bottom: 8px;
+        }
+
+        .edu-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .edu-table td {
+            padding: 0;
+            vertical-align: top;
+        }
+
+        .institution {
+            font-weight: 600;
+            font-size: 10pt;
+            color: #0f172a;
+        }
+
+        .degree {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #475569;
+        }
+
+        .date {
+            text-align: right;
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #0f172a;
+            white-space: nowrap;
+        }
+
+        .location {
+            text-align: right;
+            font-style: italic;
+            font-size: 9pt;
+            color: #64748b;
+            white-space: nowrap;
+        }
+
+        /* Skills Section */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skills-table td {
+            padding: 3px 0;
+            vertical-align: top;
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            width: 185px;
+            color: #0f172a;
+        }
+
+        .skill-list {
+            color: #334155;
+        }
+
+        /* References */
+        .references-text {
+            font-size: 9.5pt;
+            font-style: italic;
+            color: #475569;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="name">Muhammad Hanan</div>
+        <div class="contact-line">
+            Lahore Cantt. 54000, Lahore, Pakistan <span class="pipe-sep">|</span> 
+            +92 314 8705044 <span class="pipe-sep">|</span> 
+            hanan.mehboob92@gmail.com
+        </div>
+        <div class="contact-line">
+            https://www.linkedin.com/in/muhammad-hanan-323bb9219
+        </div>
+        <div class="contact-line">
+            https://github.com/iiamhannan
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="section-title">Summary</div>
+    <p class="summary-text">
+        Full Stack Developer with hands-on experience building responsive, user-centric web applications using Python, Django, JavaScript, HTML, CSS, C++, and SQL (MySQL). Skilled in developing scalable backend systems, designing intuitive user interfaces, and managing relational databases. Proficient in version control with Git and GitHub, with experience in data analysis and visualization using NumPy, Pandas, and Matplotlib. Committed to writing clean, maintainable code and delivering reliable software solutions. Known for strong problem-solving abilities, analytical thinking, and effective collaboration in team environments.
+    </p>
+
+    <!-- Education Section -->
+    <div class="section-title">Education</div>
+
+    <div class="edu-entry">
+        <table class="edu-table">
+            <tr>
+                <td class="institution">Virtual University of Pakistan</td>
+                <td class="date">2024 – Continue</td>
+            </tr>
+            <tr>
+                <td class="degree">BS Data Science</td>
+                <td class="location">Lahore, Pakistan</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="edu-entry">
+        <table class="edu-table">
+            <tr>
+                <td class="institution">Govt. Islamia Graduate College, Civil Lines, Lahore</td>
+                <td class="date">2022 – 2024</td>
+            </tr>
+            <tr>
+                <td class="degree">Intermediate</td>
+                <td class="location">Lahore, Pakistan</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="edu-entry">
+        <table class="edu-table">
+            <tr>
+                <td class="institution">Laurelbank Public School</td>
+                <td class="date">2020 – 2022</td>
+            </tr>
+            <tr>
+                <td class="degree">Matriculation</td>
+                <td class="location">Lahore, Pakistan</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-title">Skills</div>
+    <table class="skills-table">
+        <tr>
+            <td class="skill-category">Programming Languages:</td>
+            <td class="skill-list">Python, C++, SQL, JavaScript</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Frontend Development:</td>
+            <td class="skill-list">HTML, CSS, JavaScript, Bootstrap</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Backend Development:</td>
+            <td class="skill-list">Python, Django, REST APIs, File Handling</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Data Science & Libraries:</td>
+            <td class="skill-list">Pandas, NumPy, Matplotlib</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Databases:</td>
+            <td class="skill-list">MySQL</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Developer Tools:</td>
+            <td class="skill-list">Git/GitHub</td>
+        </tr>
+    </table>
+
+    <!-- Languages Section -->
+    <div class="section-title">Languages</div>
+    <table class="skills-table">
+        <tr>
+            <td class="skill-category">English:</td>
+            <td class="skill-list">Fluent</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Urdu:</td>
+            <td class="skill-list">Native</td>
+        </tr>
+    </table>
+
+    <!-- References Section -->
+    <div class="section-title">References</div>
+    <p class="references-text">
+        Shall be furnished on demand
+    </p>
+
+</body>
+</html>
