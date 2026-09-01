@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Muhammad Hanan - Professional Resume</title>
+    <title>Muhammad Hanan - Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
         @page {
             size: letter;
-            margin: 0.5in 0.6in 0.5in 0.6in;
+            margin: 0.35in 0.5in 0.35in 0.5in;
             background-color: #ffffff;
         }
 
@@ -18,52 +18,57 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 10pt;
-            line-height: 1.45;
+            font-size: 9.5pt;
+            line-height: 1.38;
             color: #222222;
             margin: 0;
             padding: 0;
             -webkit-font-smoothing: antialiased;
         }
 
+        a {
+            color: #005596; /* Exact Blue Shade from Image */
+            text-decoration: none; /* Underline Removed */
+        }
+
         /* Header Section */
         .header {
             text-align: center;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
         }
 
         .name {
-            font-size: 20pt;
+            font-size: 19pt;
             font-weight: 700;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             color: #0f172a;
         }
 
         .contact-line {
-            font-size: 9pt;
+            font-size: 8.8pt;
             color: #475569;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             font-weight: 400;
         }
 
         .pipe-sep {
-            margin: 0 6px;
+            margin: 0 5px;
             color: #64748b;
             font-weight: normal;
         }
 
         /* Section Titles */
         .section-title {
-            font-size: 10.5pt;
+            font-size: 10pt;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.8px;
             border-bottom: 1.5px solid #0f172a;
-            padding-bottom: 3px;
-            margin-top: 14px;
-            margin-bottom: 9px;
+            padding-bottom: 2px;
+            margin-top: 10px;
+            margin-bottom: 6px;
             color: #0f172a;
         }
 
@@ -71,14 +76,14 @@
         .summary-text {
             text-align: justify;
             margin: 0;
-            font-size: 9.5pt;
-            line-height: 1.5;
+            font-size: 9pt;
+            line-height: 1.4;
             color: #334155;
         }
 
         /* Education Entry Formatting */
         .edu-entry {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .edu-table {
@@ -93,20 +98,20 @@
 
         .institution {
             font-weight: 600;
-            font-size: 10pt;
+            font-size: 9.5pt;
             color: #0f172a;
         }
 
         .degree {
             font-style: italic;
-            font-size: 9.5pt;
+            font-size: 9pt;
             color: #475569;
         }
 
         .date {
             text-align: right;
             font-weight: 600;
-            font-size: 9.5pt;
+            font-size: 9pt;
             color: #0f172a;
             white-space: nowrap;
         }
@@ -114,9 +119,45 @@
         .location {
             text-align: right;
             font-style: italic;
-            font-size: 9pt;
+            font-size: 8.5pt;
             color: #64748b;
             white-space: nowrap;
+        }
+
+        /* Project Entry Formatting (Jawad CV Pattern) */
+        .project-entry {
+            margin-bottom: 8px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 9.5pt;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .project-date {
+            font-weight: 600;
+            font-size: 9pt;
+            color: #0f172a;
+            white-space: nowrap;
+        }
+
+        .project-bullets {
+            margin: 2px 0 0 0;
+            padding-left: 16px;
+            color: #334155;
+            font-size: 9pt;
+        }
+
+        .project-bullets li {
+            margin-bottom: 2px;
+            line-height: 1.35;
         }
 
         /* Skills Section */
@@ -126,15 +167,15 @@
         }
 
         .skills-table td {
-            padding: 3px 0;
+            padding: 2px 0;
             vertical-align: top;
-            font-size: 9.5pt;
-            line-height: 1.4;
+            font-size: 9pt;
+            line-height: 1.35;
         }
 
         .skill-category {
             font-weight: 600;
-            width: 185px;
+            width: 180px;
             color: #0f172a;
         }
 
@@ -144,7 +185,7 @@
 
         /* References */
         .references-text {
-            font-size: 9.5pt;
+            font-size: 9pt;
             font-style: italic;
             color: #475569;
             margin: 0;
@@ -152,7 +193,7 @@
 
     </style>
 </head>
-<body>
+<body onload="window.print()">
 
     <!-- Header Section -->
     <div class="header">
@@ -160,13 +201,13 @@
         <div class="contact-line">
             Lahore Cantt. 54000, Lahore, Pakistan <span class="pipe-sep">|</span> 
             +92 314 8705044 <span class="pipe-sep">|</span> 
-            hanan.mehboob92@gmail.com
+            <a href="mailto:hanan.mehboob92@gmail.com">hanan.mehboob92@gmail.com</a>
         </div>
         <div class="contact-line">
-            https://www.linkedin.com/in/muhammad-hanan-323bb9219
+            <a href="https://www.linkedin.com/in/muhammad-hanan-323bb9219" target="_blank">https://www.linkedin.com/in/muhammad-hanan-323bb9219</a>
         </div>
         <div class="contact-line">
-            https://github.com/iiamhannan
+            <a href="https://github.com/iiamhannan" target="_blank">https://github.com/iiamhannan</a>
         </div>
     </div>
 
@@ -183,7 +224,7 @@
         <table class="edu-table">
             <tr>
                 <td class="institution">Virtual University of Pakistan</td>
-                <td class="date">2024 – Continue</td>
+                <td class="date">2025 – Continue</td>
             </tr>
             <tr>
                 <td class="degree">BS Data Science</td>
@@ -218,6 +259,33 @@
         </table>
     </div>
 
+    <!-- Projects Section -->
+    <div class="section-title">Projects</div>
+
+    <div class="project-entry">
+        <div class="project-header">
+            <span class="project-title">Hanni's Espresso — Coffee Shop Web Application | <a href="https://iiamhannan.pythonanywhere.com" target="_blank">live ↗</a> | <a href="https://github.com/iiamhannan/coffeeshop-django" target="_blank">github ↗</a></span>
+            <span class="project-date">2026</span>
+        </div>
+        <ul class="project-bullets">
+            <li>Built a full-stack Order-Ahead web application using Python and Django, allowing users to browse interactive coffee menus and place direct orders.</li>
+            <li>Designed a clean, responsive interface using HTML5, CSS3, and JavaScript featuring dynamic item pricing and bill calculation logic.</li>
+            <li>Engineered custom Django ORM models and database management deployed live on PythonAnywhere for real-time order processing.</li>
+        </ul>
+    </div>
+
+    <div class="project-entry">
+        <div class="project-header">
+            <span class="project-title">EduTrack — Student Management System | <a href="https://iiamhannan26.pythonanywhere.com" target="_blank">live ↗</a> | <a href="https://github.com/iiamhannan/edutrack-django" target="_blank">github ↗</a></span>
+            <span class="project-date">2026</span>
+        </div>
+        <ul class="project-bullets">
+            <li>Developed an administrative portal using Python and Django for course management, academic tracking, and real-time student record updates.</li>
+            <li>Implemented Django Authentication and Role-Based Access Control (RBAC) to secure administrative routes and protect academic data.</li>
+            <li>Designed interactive dashboard views styled with Bootstrap and backed by dynamic relational database CRUD operations.</li>
+        </ul>
+    </div>
+
     <!-- Skills Section -->
     <div class="section-title">Skills</div>
     <table class="skills-table">
@@ -239,11 +307,11 @@
         </tr>
         <tr>
             <td class="skill-category">Databases:</td>
-            <td class="skill-list">MySQL</td>
+            <td class="skill-list">MySQL, SQLite</td>
         </tr>
         <tr>
-            <td class="skill-category">Developer Tools:</td>
-            <td class="skill-list">Git/GitHub</td>
+            <td class="skill-category">Developer Tools & Platforms:</td>
+            <td class="skill-list">Git/GitHub, Postman, PythonAnywhere, Render</td>
         </tr>
     </table>
 
