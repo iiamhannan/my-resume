@@ -8,7 +8,7 @@
 
         @page {
             size: letter;
-            margin: 0.35in 0.5in 0.35in 0.5in;
+            margin: 0.3in 0.5in 0.3in 0.5in;
             background-color: #ffffff;
         }
 
@@ -18,8 +18,8 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 9.5pt;
-            line-height: 1.38;
+            font-size: 9.2pt;
+            line-height: 1.3;
             color: #222222;
             margin: 0;
             padding: 0;
@@ -27,23 +27,30 @@
         }
 
         a {
-            color: #005596; /* Exact Blue Shade from Image */
-            text-decoration: none; /* Underline Removed */
+            color: #005596;
+            text-decoration: none;
         }
 
         /* Header Section */
         .header {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
 
         .name {
-            font-size: 19pt;
+            font-size: 18pt;
             font-weight: 700;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             color: #0f172a;
+        }
+
+        .title-line {
+            font-size: 10pt;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 4px;
         }
 
         .contact-line {
@@ -67,8 +74,8 @@
             letter-spacing: 0.8px;
             border-bottom: 1.5px solid #0f172a;
             padding-bottom: 2px;
-            margin-top: 10px;
-            margin-bottom: 6px;
+            margin-top: 6px;
+            margin-bottom: 3px;
             color: #0f172a;
         }
 
@@ -76,14 +83,14 @@
         .summary-text {
             text-align: justify;
             margin: 0;
-            font-size: 9pt;
-            line-height: 1.4;
+            font-size: 8.8pt;
+            line-height: 1.3;
             color: #334155;
         }
 
         /* Education Entry Formatting */
         .edu-entry {
-            margin-bottom: 6px;
+            margin-bottom: 3px;
         }
 
         .edu-table {
@@ -124,9 +131,9 @@
             white-space: nowrap;
         }
 
-        /* Project Entry Formatting (Jawad CV Pattern) */
+        /* Project Entry Formatting */
         .project-entry {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
 
         .project-header {
@@ -149,15 +156,15 @@
         }
 
         .project-bullets {
-            margin: 2px 0 0 0;
+            margin: 1px 0 0 0;
             padding-left: 16px;
             color: #334155;
-            font-size: 9pt;
+            font-size: 8.8pt;
         }
 
         .project-bullets li {
-            margin-bottom: 2px;
-            line-height: 1.35;
+            margin-bottom: 1px;
+            line-height: 1.3;
         }
 
         /* Skills Section */
@@ -167,10 +174,10 @@
         }
 
         .skills-table td {
-            padding: 2px 0;
+            padding: 1px 0;
             vertical-align: top;
             font-size: 9pt;
-            line-height: 1.35;
+            line-height: 1.3;
         }
 
         .skill-category {
@@ -198,23 +205,21 @@
     <!-- Header Section -->
     <div class="header">
         <div class="name">Muhammad Hanan</div>
+        <div class="title-line">Full Stack Developer <span class="pipe-sep">|</span> Machine Learning &amp; AI</div>
         <div class="contact-line">
             Lahore Cantt. 54000, Lahore, Pakistan <span class="pipe-sep">|</span> 
             +92 314 8705044 <span class="pipe-sep">|</span> 
             <a href="mailto:hanan.mehboob92@gmail.com">hanan.mehboob92@gmail.com</a>
         </div>
         <div class="contact-line">
-            <a href="https://www.linkedin.com/in/muhammad-hanan-323bb9219" target="_blank">https://www.linkedin.com/in/muhammad-hanan-323bb9219</a>
-        </div>
-        <div class="contact-line">
-            <a href="https://github.com/iiamhannan" target="_blank">https://github.com/iiamhannan</a>
+            <a href="https://www.linkedin.com/in/muhammad-hanan-323bb9219" target="_blank">linkedin.com/in/muhammad-hanan-323bb9219</a> <span class="pipe-sep">|</span> <a href="https://github.com/iiamhannan" target="_blank">github.com/iiamhannan</a>
         </div>
     </div>
 
     <!-- Summary Section -->
     <div class="section-title">Summary</div>
     <p class="summary-text">
-        Full Stack Developer with hands-on experience building responsive, user-centric web applications using Python, Django, JavaScript, HTML, CSS, C++, and SQL (MySQL). Skilled in developing scalable backend systems, designing intuitive user interfaces, and managing relational databases. Proficient in version control with Git and GitHub, with experience in data analysis and visualization using NumPy, Pandas, and Matplotlib. Committed to writing clean, maintainable code and delivering reliable software solutions. Known for strong problem-solving abilities, analytical thinking, and effective collaboration in team environments.
+        Full Stack Developer with hands-on experience building responsive, user-centric web applications using Python, Django, HTML, CSS, C++, and SQL (MySQL), along with working knowledge of Machine Learning and Deep Learning using scikit-learn and PyTorch. Skilled in scalable backend systems, relational databases, and predictive modeling with NumPy, Pandas, and Matplotlib. Proficient in Git and GitHub. Known for strong problem-solving, analytical thinking, and effective collaboration in team environments.
     </p>
 
     <!-- Education Section -->
@@ -264,12 +269,24 @@
 
     <div class="project-entry">
         <div class="project-header">
+            <span class="project-title">Flood Prediction — Machine Learning Project | <a href="https://github.com/iiamhannan/flood-prediction" target="_blank">github ↗</a></span>
+            <span class="project-date">2026</span>
+        </div>
+        <ul class="project-bullets">
+            <li>Built a regression model in Python to predict flood probability from 20 environmental and human-made factors using the Kaggle Playground S4E5 dataset (~1.1M rows).</li>
+            <li>Compared Linear Regression, Random Forest, and XGBoost using scikit-learn pipelines; the best model (Linear Regression) achieved an R² of 0.85 on a held-out test set.</li>
+            <li>Performed EDA and feature importance analysis, and deployed the trained model as an interactive Streamlit web app for live predictions.</li>
+        </ul>
+    </div>
+
+    <div class="project-entry">
+        <div class="project-header">
             <span class="project-title">Hanni's Espresso — Coffee Shop Web Application | <a href="https://iiamhannan.pythonanywhere.com" target="_blank">live ↗</a> | <a href="https://github.com/iiamhannan/coffeeshop-django" target="_blank">github ↗</a></span>
             <span class="project-date">2026</span>
         </div>
         <ul class="project-bullets">
             <li>Built a full-stack Order-Ahead web application using Python and Django, allowing users to browse interactive coffee menus and place direct orders.</li>
-            <li>Designed a clean, responsive interface using HTML5, CSS3, and JavaScript featuring dynamic item pricing and bill calculation logic.</li>
+            <li>Designed a clean, responsive interface using HTML5 and CSS3 featuring dynamic item pricing and bill calculation logic.</li>
             <li>Engineered custom Django ORM models and database management deployed live on PythonAnywhere for real-time order processing.</li>
         </ul>
     </div>
@@ -291,18 +308,22 @@
     <table class="skills-table">
         <tr>
             <td class="skill-category">Programming Languages:</td>
-            <td class="skill-list">Python, C++, SQL, JavaScript</td>
+            <td class="skill-list">Python, C++, SQL</td>
         </tr>
         <tr>
             <td class="skill-category">Frontend Development:</td>
-            <td class="skill-list">HTML, CSS, JavaScript, Bootstrap</td>
+            <td class="skill-list">HTML, CSS, Bootstrap</td>
         </tr>
         <tr>
             <td class="skill-category">Backend Development:</td>
             <td class="skill-list">Python, Django, REST APIs, File Handling</td>
         </tr>
         <tr>
-            <td class="skill-category">Data Science & Libraries:</td>
+            <td class="skill-category">Machine Learning &amp; AI:</td>
+            <td class="skill-list">Machine Learning, Deep Learning, PyTorch, scikit-learn, XGBoost, Streamlit</td>
+        </tr>
+        <tr>
+            <td class="skill-category">Data Science &amp; Libraries:</td>
             <td class="skill-list">Pandas, NumPy, Matplotlib</td>
         </tr>
         <tr>
@@ -310,7 +331,7 @@
             <td class="skill-list">MySQL, SQLite</td>
         </tr>
         <tr>
-            <td class="skill-category">Developer Tools & Platforms:</td>
+            <td class="skill-category">Developer Tools &amp; Platforms:</td>
             <td class="skill-list">Git/GitHub, Postman, PythonAnywhere, Render</td>
         </tr>
     </table>
@@ -319,12 +340,8 @@
     <div class="section-title">Languages</div>
     <table class="skills-table">
         <tr>
-            <td class="skill-category">English:</td>
-            <td class="skill-list">Fluent</td>
-        </tr>
-        <tr>
-            <td class="skill-category">Urdu:</td>
-            <td class="skill-list">Native</td>
+            <td class="skill-category">Spoken:</td>
+            <td class="skill-list">English (Fluent), Urdu (Native)</td>
         </tr>
     </table>
 
